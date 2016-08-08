@@ -1,6 +1,6 @@
 {
   "name": "cvlwg",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Webpack dev generator with React and ES6",
   "bin": {
     "cvlwg": "./index.js"
