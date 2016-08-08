@@ -1,20 +1,17 @@
 var path = require('path');
 
-var entryPath = './src/js/main.js';
-var jsPath = path.join(__dirname, 'src', 'js');
+var entryPath = './js/main.js';
+var jsPath = path.join(__dirname, 'js');
 
 module.exports = {
   resolve: {
-    root: [
-      path.resolve('./src/js'),
-      path.resolve('./src/scss'),
-    ],
-    extensions: ['', '.js']
+    root: __dirname,
+    extensions: ['', '.js', '.scss']
   },
   entry: entryPath,
   output: {
     path: path.join(__dirname, 'static'),
-    publicPath: '/assets/',
+    publicPath: '/static/',
     filename: 'bundle.js'
   },
   module: {
@@ -27,7 +24,7 @@ module.exports = {
     loaders: [
       {
         test: jsPath,
-        loaders: ['react-hot', 'jsx', 'babel']
+        loaders: ['react-hot', 'babel']
       },
       {
         test: /\.scss$/,
