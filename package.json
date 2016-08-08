@@ -3,7 +3,7 @@
   "version": "1.0.3",
   "description": "Webpack dev generator with React and ES6",
   "bin": {
-    "cvlwg": "bin/index.js"
+    "cvlwg": "./index.js"
   },
   "repository": {
     "type": "git",

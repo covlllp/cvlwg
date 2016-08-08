@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var ncp = require('ncp').ncp;
 var path = require('path');
 
