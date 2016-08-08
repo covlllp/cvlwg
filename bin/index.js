@@ -7,7 +7,7 @@ var currentDirectory = process.cwd();
 var generatedDirectory = path.join(__dirname, 'generated');
 
 function copyFiles(cb) {
-  ncp(getGeneratedDirectory(), getCurrentDirectory(), cb);
+  ncp(generatedDirectory, currentDirectory, cb);
 }
 
 copyFiles(function() {
